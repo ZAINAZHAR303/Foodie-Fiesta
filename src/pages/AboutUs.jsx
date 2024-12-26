@@ -1,40 +1,38 @@
 import React from 'react';
 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 function AboutUs() {
   const teamMembers = [
     {
       name: 'Zain',
       role: 'Frontend Developer',
       bio: 'I am a passionate frontend developer with expertise in React, Next.js, and modern UI/UX design principles. I love creating interactive and visually appealing user interfaces.',
-      photo: '/path-to-your-photo.jpg', // Replace with your actual photo path
+      photo: 'zain.jpeg', // Replace with your actual photo path
       skills: ['React', 'Next.js', 'Firebase', 'GSAP', 'Tailwind CSS'],
     },
     {
-      name: 'Your Teammate',
-      role: 'Backend Developer', // Replace this role with the actual role
-      bio: 'A highly skilled backend developer who specializes in creating efficient and secure APIs. Always enthusiastic about solving complex problems.', // Replace with the actual bio
-      photo: '/path-to-teammate-photo.jpg', // Replace with your teammate's photo path
-      skills: ['Node.js', 'MongoDB', 'Express', 'GraphQL'], // Replace with actual skills
+      name: 'Sara Khalid',
+      role: 'Web Designer', // Replace this role with the actual role
+      bio: 'A highly skilled Web Designer who specializes in creating efficient and secure APIs. Always enthusiastic about solving complex problems.', // Replace with the actual bio
+      photo: 'kissan1.jpg', // Replace with your teammate's photo path
+      skills: ['HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'], // Replace with actual skills
     },
   ];
 
   return (
-    <section className="about-us-section py-12 px-4 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100">
+    <>
+    <Navbar />
+    <section className="about-us-section py-12 px-4 m-4 neumorphic">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
-        <div className="mission-vision text-center mb-12">
-          <p className="text-lg font-semibold mb-4">
-            We are a dynamic duo committed to creating innovative web applications that solve real-world problems and provide exceptional user experiences.
-          </p>
-          <p className="text-gray-700">
-            Our mission is to bring creativity and functionality together to develop projects that make a difference. With a passion for learning and growth, we aim to push the boundaries of technology and design.
-          </p>
-        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="team-card bg-white p-6 rounded-lg shadow-neumorphic text-center transition-transform hover:scale-105"
+              className="team-card  p-6 rounded-lg neumorphic text-center transition-transform hover:scale-105"
             >
               <img
                 src={member.photo}
@@ -71,6 +69,8 @@ function AboutUs() {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 

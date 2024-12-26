@@ -2,31 +2,37 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-  import PrivateRoute from "./PrivateRoute";
-  import Home from "../pages/home/Home";
-//   import Signup from "../pages/signup/Signup";
-  import Login from "../pages/login/Login";
-  import PublicRoute from "./PublicRoute";
-import Register from "../pages/register/Register";
-  import Profile from "../components/profile/Profile";
+ 
+import Register from "../src/pages/Register";
+import Home from "../src/pages/Home";
+import Login from "../src/pages/Login";
+import AboutUs from "../src/pages/AboutUs";
+import ContactUs from "../src/pages/ContactUs";
+// import Register from "../pages/register/Register";
+  // import Profile from "../components/profile/Profile";
   
   
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <PrivateRoute><Home/></PrivateRoute>,
+      element: <Home/>
     },
     {
       path:"/signup",
-      element: <PublicRoute><Register/></PublicRoute> 
+      element: <Register/> 
     },
-    {
-      path: "/profile",
-      element: <PrivateRoute><Profile/></PrivateRoute>,  // replace with your own component name
-    },
+    
     {
       path:"/login",
-      element: <PublicRoute><Login/></PublicRoute> 
+      element: <Login/>
+    },
+    {
+      path:"/aboutus",
+      element: <AboutUs/>
+    },
+    {
+      path:"/contact",
+      element: <ContactUs/>
     }
      
   ]);

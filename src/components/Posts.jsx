@@ -11,7 +11,7 @@ function Posts() {
         {postsData.map((post) => (
           <div
             key={post.id}
-            className="post-card p-4 rounded-lg  neumorphic bg-white transition-transform hover:scale-105"
+            className="post-card p-4 rounded-lg  neumorphic transition-transform hover:scale-105"
           >
             <img
               src={post.photo}

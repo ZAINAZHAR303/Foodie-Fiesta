@@ -34,11 +34,11 @@ function Footer() {
           </div>
           <div className="flex items-center text-sm space-x-2 mt-2">
             <MdPhone className="text-green-500" />
-            <p>+123 456 7890</p>
+            <p>+92 308 544 0364</p>
           </div>
           <div className="flex items-center text-sm space-x-2 mt-2">
             <MdLocationOn className="text-red-500" />
-            <p>123 Recipe Lane, Food City</p>
+            <p>IT Building, UAF,Faisalabad</p>
           </div>
         </div>
       </div>
