@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import postsData from './PostsData';
 import { FaStar } from 'react-icons/fa';
+import {AddRecipe} from './AddRecipe';
 
 
 
@@ -52,9 +53,11 @@ function Posts() {
 
 
       {
-        click &&{
-          <AddRecipe />
-        }
+        click &&(
+          <AddRecipe/>
+        )
+          
+        
       }
     </section>
   );
