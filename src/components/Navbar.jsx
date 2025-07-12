@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav className="neumorphic p-4 flex justify-between items-center m-4">
-      <h1 className="text-xl font-bold">Recipe Share</h1>
+      <h1 className="text-xl font-bold">Foodie fiesta</h1>
       {/* <h1 className='text-xl '>hello</h1> */}
       <ul className="flex gap-4">
         <Link to="/">
